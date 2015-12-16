@@ -10,7 +10,6 @@ public class getDashboardDetails
     public static void main(String[] args) throws Exception
     {
 	getDashboardDetails eod=new getDashboardDetails();
-        System.out.println("Testing 1 - Send Http GET request");
         eod.sendGet();
     }
     
@@ -20,9 +19,9 @@ public class getDashboardDetails
         
         URL obj=new URL(url);
 	HttpURLConnection con=(HttpURLConnection)obj.openConnection();
-        String myCookies="JSESSIONID=DyNSWvnQ1GJrzj1hk22GRMQr0rpwGnshpJznwf2cv34w4hqmH46h!2138552663; "+
-                    "OAMAuthnCookie_queuemonitoring.us.oracle.com:80=Wc3pjksAF0q7bOeXetBbeMmLUzKDHj1m6%2FLTIZi1eqiocNTUl8X4qON7t4eZr%2BhCEN55luZ%2FV0EYNUEbr7dltg0VymQKIoLxTZzithFnKibOiNZFTZKZp5U1BaMB7p4%2BZdpR%2F5OU5ADpk3iGBUqz%2Boe%2BFuYgNoZbutZB5wobj3ydnQ5yKInLZUt7oL%2B9KjinCw8RYrrw06G4iPdtXfJtGPKV0a5ZgQUkYTLYFzE0rdWdHTttVx7AHW22ZS08pm3gr%2BdzmkclOrsJrgQ78OOXg9BMPGdBoGXx0W5o6uxithe5hpTG7lWrhaO92x%2BQj%2FvNSYOE%2FZimBgwfqdfu%2F4tAZltHcNFTu14B6G038qaEnHw%3D; "+
-                    "ORASSO_AUTH_HINT=v1.0~20151215090650; "+
+        String myCookies="JSESSIONID=hz2xWw5FtQZGQ1zGVQpclLxpb5n36ScSk27G12MXfYxczZ6xlJmf!2138552663; "+
+                    "OAMAuthnCookie_queuemonitoring.us.oracle.com:80=Afg1BM9JbGV6v3wz2kp03AHJj3BDZDNzXqucEg2pMX2zbrGj8o5DdYtIhbgbPoIPXSpy4M0lsdN9JwJ%2F41U0Sklw6n95Q%2FRytUBnJteHRSjIkfzTOUKUCAZLAQQOqn%2FDEIZXQ1q5OaMvTDEsxrC2QFG3uvtdyB4PYuDMvNx7P5SOwQiLD5jp5krzvoGk5vlM9yPBchpqiVZUHJ2Y6JtCyrY1znQlZ7Wz8kj%2BWow24ShV%2Bw0v5zGbqgBxzGWcyDRknyUTA8SjpY285ZnDWLn%2F4JW0Yuc0DLG0n%2BHIc9ptmkR32dU5lt0CIZBQijNrH4F3hW3qoiIMEju5opjBBg8h%2BqFiODNne354bVZIwfSOiwU%3D; "+
+                    "ORASSO_AUTH_HINT=v1.0~20151216090645; "+
                     "ORA_UCM_INFO=3~159CD85F80E20B94E050E60A907F3104~Soumadeep~Mazumdar~soumadeep.mazumdar@oracle.com; "+
                     "custList=; "+"qmon-tz=330";
         con.setRequestProperty("Cookie",myCookies);
@@ -31,7 +30,7 @@ public class getDashboardDetails
         con.connect();
 	int responseCode=con.getResponseCode();
         
-	System.out.println("\nSending 'GET' request to URL : "+url);
+	System.out.println("\nURL : "+url);
 	System.out.println("Response Code : "+responseCode+"\n\n");
 
         StringBuffer response;
@@ -59,7 +58,9 @@ public class getDashboardDetails
             if(line.trim().startsWith("<tr onMouseOver="))
             {
                 String[] components=line.split("<td nowrap>");
-                System.out.println(components[2]);
+                System.out.println("SR/RFC#: "+truncateDetails("<a href=\"javascript:openRFC('","');\"",components[2]));
+                System.out.println("Title: "+truncateDetails("title=\"","\" style=\"",components[2]));
+                System.out.println();
             }
         }
     }
@@ -75,26 +76,18 @@ public class getDashboardDetails
         {
             if(line.startsWith("<td nowrap>"))
             {
-                System.out.println("SR/RFC#: "+truncateDetailsFirst("<a href=\"javascript:openRFC('","');\"",line));
-                System.out.println("Title: "+truncateDetailsFirst("title=\"","\">",line));
+                System.out.println("SR/RFC#: "+truncateDetails("<a href=\"javascript:openRFC('","');\"",line));
+                System.out.println("Title: "+truncateDetails("title=\"","\">",line));
                 System.out.println();
             }
         }
     }
     
-    private String truncateDetailsFirst(String opentag,String closetag,String rawData)
+    private String truncateDetails(String opentag,String closetag,String rawData)
     {
         if(!rawData.contains(opentag) || !rawData.contains(closetag))
             return "";
         
         return rawData.substring(rawData.indexOf(opentag)+opentag.length(),rawData.indexOf(closetag,rawData.indexOf(opentag)));
-    }
-    
-    private String truncateDetailsLast(String opentag,String closetag,String rawData)
-    {
-        if(!rawData.contains(opentag) || !rawData.contains(closetag))
-            return "";
-        
-        return rawData.substring(rawData.lastIndexOf(opentag)+opentag.length(),rawData.indexOf(closetag,rawData.lastIndexOf(opentag)));
     }
 }

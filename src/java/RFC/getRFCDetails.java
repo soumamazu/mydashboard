@@ -10,9 +10,8 @@ public class getRFCDetails extends HttpServlet
     public static void main(String[] args) throws Exception
     {
 	getRFCDetails rfc=new getRFCDetails();
-        System.out.println("Testing 1 - Send Http GET request");
-        rfc.sendGet("3-5EVOO0I");
-        rfc.sendGet("3-5EQSJZL");
+        rfc.sendGet("3-5EVKIQW");
+        rfc.sendGet("3-5G8MVWG");
     }
     
     private void sendGet(String rfcNum) throws Exception
@@ -21,20 +20,20 @@ public class getRFCDetails extends HttpServlet
         
         URL obj=new URL(url);
 	HttpURLConnection con=(HttpURLConnection)obj.openConnection();
-        String myCookies="BIGipServerprod-support.us.oracle.com_http_pool=3753067672.24862.0000; "+
-                    "JSESSIONID=e345c27acb4aafca07b5a41c88f36f3bbdbdb1638f57349ee70f7b2b487e5a76.e34NchyKah4Qbi0Mah8SbxyMaxyPe0; "+
-                    "OHS-support.us.oracle.com-443=9533F1F2A900007FDE5B4348AF7E485D48FFD4DAAAD58AEB0F86123504AC4A43A04CC9E6603AF13DCA6FC20D3464B32E412AA587EFF9E666FDA5E93605555D37053525B9C3FEFBA943C8C9FDABB2127A73B98642FF916892599C7BE0C0B15311EF5814CBD0CE159F8D851FBDCAB494D2481011C66F528AC5AD4051026C35D2CDF0BD5D3A02AB7CF66774944C284CC07C73B943963548FC063D0A12F39EE28276B16E209CEC0361FAD55D717D6A8B6EF21C62D69CED8F9B3206941BBFA9D0AF6C19D312800C0286D4242C38F5FD79BA0D6CC455FCCE2659493C5A9FD2108CAD915BDAAEB83A29475FDFEF6DA8D782AC1184B01DC98E1CD1A08E1AFBDE9EEC2884ADC6A6A43528074D; "+
-                    "mos.presence=d9b95911-2734-28d9-ee07-3c3e18202e53%7C1450143390329; "+
+        String myCookies="BIGipServerprod-support.us.oracle.com_http_pool=3803399320.24862.0000; "+
+                    "JSESSIONID=12c0832f58bc1b1bdf2b28f6f6ff2f0b185aa72b0b18b706d04c27199a8afee1.e34NchyKa3yKci0La30NaNuPbhuKe0; "+
+                    "OHS-support.us.oracle.com-443=78F66ABC36184B1E6545A42D0A76C9A3F0D9C067A66B510CB8B60232CFCAD785F92340C4267FAB5A904B1B6B35FDF90EEEF296429888CF8152C2441F03B6E1C59768E05E52A124CB60D3EB5751BDF9B06F556962F0747670140F2D6EA3F0B354CE53844C6320C2266342E4FCD2341801FE7948563B88C4F145948FD215E65B9C96C24D1768208251ED382755381C1F9B8C5D9FAB4C637707EBC1FDD737476E2C7DA0C9BFFF7AEC57F977983C5D9F541CDA465CFED5D6F4D616E954CCA49C60C1BB928BF39A8138A0157628D61AD1B8978AF7B68B106B3698EBC97C6805D5E8770BC28BFD2065323656CEE7F04002EC8B5A6352C04F2D351732E58BCDE6E7AD75F09315EB05A57E97; "+
+                    "mos.presence=05997297-886c-45ee-45cc-d8e5e399dd69%7C1450239790200; "+
                     "oracle.uix=0^^GMT+5:30; "+
-                    "OAM_ID=VERSION_4~X9Ssu80Rd5ZAbuQc+RVkPA==~xfRmC7Jo/kdJrBODbayB3xy/ydq1aScWg/e+9LLcX4ZUTGh46Aln8WY+pHajVv5PxNKjAQjahQii7GRxVUQDkPnfJC0d8KZF9Jdqo/0Tr4vVF2W/OtM+sVyu9ctROCo3f5r5jCTGyb6Hu9aP6YygQxJleUGilNoiZGjT83NDfiukUxlnpHkua2n1BcHoMqn39nSmaui31/kbHyPaZNv21bn7zVlUsHTquecNQQGzefNjGL9Pt6tih7acOp7liZIcd0cYcmW8NHxkm5O7eZIaOg==; "+
-                    "MOSEPSESSIONID=JB6jQ6tzOrLuvIQprl19V9ONOPpBbGELiEvBl_noS0bvbDtxgi75!-1159030445";
+                    "OAM_ID=VERSION_4~X0wRaec7JEvpxxx5sDg2YA==~+eYXLSH9Unvp+3pgrrq+qPWyMoxwsiAKsykGdKAZ+65s/sapy4aeNCDRg6nzd95pX/ZDbwBuBfzi8pGgHasulA3ylOFqxCx0gK1MGeHbEcFuIuQd5JXJNy0rtV4jvDHIWlL/oaUv3oy+94/gmLGTg8ea76tqdCDdn1gkPpctOQAmRcoaVTEdFJSqrqSnyE06yFxy4GAdvjWF1L2drwYRXjzhkmwJ4UB1kqQlHKIjJwffNWlrwI4FbaWCOtquaUnb0C2m74x9roknh6d0Jq6eQA==; "+
+                    "MOSEPSESSIONID=tT2o4pOBWRU3MAFqtzZspYcD9LmpCjG4m9Re5o4agF6SFZcOrOeA!-2106168626";
         con.setRequestProperty("Cookie",myCookies);
         con.setRequestMethod("GET");
         
         con.connect();
 	int responseCode=con.getResponseCode();
         
-	System.out.println("\nSending 'GET' request to URL : "+url);
+	System.out.println("\nURL : "+url);
 	System.out.println("Response Code : "+responseCode+"\n\n");
 
         StringBuffer response;
@@ -109,8 +108,8 @@ public class getRFCDetails extends HttpServlet
         System.out.println("Priority Score: "+parseDetails(priorityTag,rawData));
         String urgencyTag="<span id=\"urgencyCode\" class=\"x8\">";
         System.out.println("Urgency: "+parseDetails(urgencyTag,rawData));
-        String emergencyTag="<span id=\"displayEmergencyFlag__xc_c\" class=\"x6\">";
-        System.out.println("Emergency: "+parseDetails(emergencyTag,rawData));
+        String emergency=rawData.contains("Read only Checkbox Not Checked")?"No":"Yes";
+        System.out.println("Emergency: "+emergency);
         String startTag="<span id=\"startDateHeader\" class=\"x8\">";
         System.out.println("Planned Start: "+parseDetails(startTag,rawData));
         String endTag="<span id=\"endDateHeader\" class=\"x8\">";
