@@ -1,0 +1,446 @@
+
+=============== [2015/12/17 11:09:48, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:09:48] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:09:48] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:09:48] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:09:48] INFO:    SSHExec initializing ...
+[11:09:48] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:09:48] INFO:    SSHExec initialized successfully
+[11:09:48] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:09:51] INFO:    SSH connection established
+[11:09:51] INFO:    Command is echo 123
+[11:09:51] INFO:    Connection channel established succesfully
+[11:09:51] INFO:    Start to run command
+[11:09:52] INFO:    123
+
+[11:09:52] INFO:    Connection channel closed
+[11:09:52] INFO:    Check if exec success or not ... 
+[11:09:52] INFO:    Execute successfully for command: echo 123
+[11:09:52] INFO:    Now wait 5 seconds to begin next task ...
+[11:09:57] INFO:    Connection channel disconnect
+[11:09:57] INFO:    Command is abcd
+[11:09:57] INFO:    Connection channel established succesfully
+[11:09:57] INFO:    Start to run command
+[11:09:57] INFO:    Connection channel closed
+[11:09:57] INFO:    Check if exec success or not ... 
+[11:09:57] INFO:    Execution failed while executing command: abcd
+[11:09:57] INFO:    Error message: bash: abcd: command not found
+[11:09:57] ERROR:   The task has failed to execute :Exec command abcd. So program exit.
+
+=============== [2015/12/17 11:15:21, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:15:21] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:15:21] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:15:21] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:15:21] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[11:15:21] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[11:15:21] INFO:    ******************************************************
+[11:15:21] INFO:    The list below shows sshxcute configuration parameter
+[11:15:21] INFO:    ******************************************************
+[11:15:21] INFO:    TIMEOUT => 3600
+[11:15:21] INFO:    HALT_ON_FAILURE => true
+[11:15:21] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[11:15:21] INFO:    SSH_PORT_NUMBER => 22
+[11:15:21] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[11:15:21] INFO:    SSHExec initializing ...
+[11:15:21] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:15:21] INFO:    SSHExec initialized successfully
+[11:15:21] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:15:24] INFO:    SSH connection established
+[11:15:24] INFO:    Command is echo 123
+[11:15:25] INFO:    Connection channel established succesfully
+[11:15:25] INFO:    Start to run command
+[11:15:25] INFO:    123
+
+[11:15:25] INFO:    Connection channel closed
+[11:15:25] INFO:    Check if exec success or not ... 
+[11:15:25] INFO:    Execute successfully for command: echo 123
+[11:15:25] INFO:    Now wait 0 seconds to begin next task ...
+[11:15:25] INFO:    Connection channel disconnect
+[11:15:25] INFO:    Command is abcd
+[11:15:26] INFO:    Connection channel established succesfully
+[11:15:26] INFO:    Start to run command
+[11:15:26] INFO:    Connection channel closed
+[11:15:26] INFO:    Check if exec success or not ... 
+[11:15:26] INFO:    Execution failed while executing command: abcd
+[11:15:26] INFO:    Error message: bash: abcd: command not found
+[11:15:26] ERROR:   The task has failed to execute :Exec command abcd. So program exit.
+[11:15:26] INFO:    SSH connection shutdown
+
+=============== [2015/12/17 11:16:58, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:16:58] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:16:58] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:16:58] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:16:58] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[11:16:58] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[11:16:58] INFO:    ******************************************************
+[11:16:58] INFO:    The list below shows sshxcute configuration parameter
+[11:16:58] INFO:    ******************************************************
+[11:16:58] INFO:    TIMEOUT => 3600
+[11:16:58] INFO:    HALT_ON_FAILURE => true
+[11:16:58] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[11:16:58] INFO:    SSH_PORT_NUMBER => 22
+[11:16:58] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[11:16:58] INFO:    SSHExec initializing ...
+[11:16:58] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:16:58] INFO:    SSHExec initialized successfully
+[11:16:58] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:17:01] INFO:    SSH connection established
+[11:17:01] INFO:    Command is pbrun ohsdba -u ordnbt2o
+[11:17:01] INFO:    Connection channel established succesfully
+[11:17:01] INFO:    Start to run command
+[11:17:02] INFO:    su from soummazu to ordnbt2o at Thu Dec 17 05:47:02 GMT 2015
+
+
+=============== [2015/12/17 11:21:29, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:21:29] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:21:29] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:21:29] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:21:29] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[11:21:29] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[11:21:29] INFO:    ******************************************************
+[11:21:29] INFO:    The list below shows sshxcute configuration parameter
+[11:21:29] INFO:    ******************************************************
+[11:21:29] INFO:    TIMEOUT => 3600
+[11:21:29] INFO:    HALT_ON_FAILURE => true
+[11:21:29] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[11:21:29] INFO:    SSH_PORT_NUMBER => 22
+[11:21:29] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[11:21:29] INFO:    SSHExec initializing ...
+[11:21:29] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:21:29] INFO:    SSHExec initialized successfully
+[11:21:29] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:21:32] INFO:    SSH connection established
+[11:21:32] INFO:    Command is date
+[11:21:32] INFO:    Connection channel established succesfully
+[11:21:32] INFO:    Start to run command
+[11:21:33] INFO:    Thu Dec 17 05:51:32 GMT 2015
+
+[11:21:33] INFO:    Connection channel closed
+[11:21:33] INFO:    Check if exec success or not ... 
+[11:21:33] INFO:    Execute successfully for command: date
+[11:21:33] INFO:    Now wait 0 seconds to begin next task ...
+[11:21:33] INFO:    Connection channel disconnect
+[11:21:33] INFO:    Command is ps ux
+[11:21:33] INFO:    Connection channel established succesfully
+[11:21:33] INFO:    Start to run command
+[11:21:33] INFO:    USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+soummazu 23932  0.0  0.0 149004  5252 ?        Sl   05:39   0:00 sshd: soummazu@notty
+soummazu 25155  0.0  0.0 149004  5224 ?        Sl   05:47   0:00 sshd: soummazu@notty
+soummazu 25160  0.0  0.0  24384  2316 ?        Ss   05:47   0:00 pbrun ohsdba -u ordnbt2o
+soummazu 25652  0.0  0.0 149004  5240 ?        Sl   05:51   0:00 sshd: soummazu@notty
+soummazu 25658  0.0  0.0   8644   816 ?        Rs   05:51   0:00 ps ux
+
+[11:21:33] INFO:    Connection channel closed
+[11:21:33] INFO:    Check if exec success or not ... 
+[11:21:33] INFO:    Execute successfully for command: ps ux
+[11:21:33] INFO:    Now wait 0 seconds to begin next task ...
+[11:21:33] INFO:    Connection channel disconnect
+[11:21:33] INFO:    SSH connection shutdown
+
+=============== [2015/12/17 11:28:54, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:28:54] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:28:54] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:28:54] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:28:54] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[11:28:54] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[11:28:54] INFO:    ******************************************************
+[11:28:54] INFO:    The list below shows sshxcute configuration parameter
+[11:28:54] INFO:    ******************************************************
+[11:28:54] INFO:    TIMEOUT => 3600
+[11:28:54] INFO:    HALT_ON_FAILURE => true
+[11:28:54] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[11:28:54] INFO:    SSH_PORT_NUMBER => 22
+[11:28:54] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[11:28:54] INFO:    SSHExec initializing ...
+[11:28:54] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:28:54] INFO:    SSHExec initialized successfully
+[11:28:54] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:28:57] INFO:    SSH connection established
+[11:28:57] INFO:    Command is date;ps ux
+[11:28:57] INFO:    Connection channel established succesfully
+[11:28:57] INFO:    Start to run command
+[11:28:58] INFO:    Thu Dec 17 05:58:58 GMT 2015
+
+[11:28:58] INFO:    USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+soummazu 23932  0.0  0.0 149004  5252 ?        Sl   05:39   0:00 sshd: soummazu@notty
+soummazu 25155  0.0  0.0 149004  5224 ?        Sl   05:47   0:00 sshd: soummazu@notty
+soummazu 25160  0.0  0.0  24384  2316 ?        Ss   05:47   0:00 pbrun ohsdba -u ordnbt2o
+soummazu 26482  0.0  0.0 149004  5232 ?        Sl   05:58   0:00 sshd: soummazu@notty
+soummazu 26487  0.0  0.0   8768   916 ?        Ss   05:58   0:00 bash -c date;ps ux
+soummazu 26489  0.0  0.0   8644   816 ?        R    05:58   0:00 ps ux
+
+[11:28:58] INFO:    Connection channel closed
+[11:28:58] INFO:    Check if exec success or not ... 
+[11:28:58] INFO:    Execute successfully for command: date;ps ux
+[11:28:58] INFO:    Now wait 0 seconds to begin next task ...
+[11:28:58] INFO:    Connection channel disconnect
+[11:28:58] INFO:    SSH connection shutdown
+
+=============== [2015/12/17 11:29:48, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:29:48] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:29:48] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:29:48] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:29:48] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[11:29:48] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[11:29:48] INFO:    ******************************************************
+[11:29:48] INFO:    The list below shows sshxcute configuration parameter
+[11:29:48] INFO:    ******************************************************
+[11:29:48] INFO:    TIMEOUT => 3600
+[11:29:48] INFO:    HALT_ON_FAILURE => true
+[11:29:48] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[11:29:48] INFO:    SSH_PORT_NUMBER => 22
+[11:29:48] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[11:29:48] INFO:    SSHExec initializing ...
+[11:29:48] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:29:48] INFO:    SSHExec initialized successfully
+[11:29:48] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:29:51] INFO:    SSH connection established
+[11:29:51] INFO:    Command is date;ps ux
+[11:29:51] INFO:    Connection channel established succesfully
+[11:29:51] INFO:    Start to run command
+[11:29:52] INFO:    Thu Dec 17 05:59:51 GMT 2015
+
+[11:29:52] INFO:    USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+soummazu 23932  0.0  0.0 149004  5252 ?        Sl   05:39   0:00 sshd: soummazu@notty
+soummazu 25155  0.0  0.0 149004  5224 ?        Sl   05:47   0:00 sshd: soummazu@notty
+soummazu 25160  0.0  0.0  24384  2316 ?        Ss   05:47   0:00 pbrun ohsdba -u ordnbt2o
+soummazu 26597  0.0  0.0 149004  5224 ?        Sl   05:59   0:00 sshd: soummazu@notty
+soummazu 26602  0.0  0.0   8768   916 ?        Ss   05:59   0:00 bash -c date;ps ux
+soummazu 26604  0.0  0.0   8644   812 ?        R    05:59   0:00 ps ux
+
+[11:29:52] INFO:    Connection channel closed
+[11:29:52] INFO:    Check if exec success or not ... 
+[11:29:52] INFO:    Execute successfully for command: date;ps ux
+[11:29:52] INFO:    Now wait 0 seconds to begin next task ...
+[11:29:52] INFO:    Connection channel disconnect
+[11:29:52] INFO:    SSH connection shutdown
+
+=============== [2015/12/17 11:30:24, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:30:24] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:30:24] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:30:24] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:30:24] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[11:30:24] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[11:30:24] INFO:    ******************************************************
+[11:30:24] INFO:    The list below shows sshxcute configuration parameter
+[11:30:24] INFO:    ******************************************************
+[11:30:24] INFO:    TIMEOUT => 3600
+[11:30:24] INFO:    HALT_ON_FAILURE => true
+[11:30:24] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[11:30:24] INFO:    SSH_PORT_NUMBER => 22
+[11:30:24] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[11:30:24] INFO:    SSHExec initializing ...
+[11:30:24] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:30:24] INFO:    SSHExec initialized successfully
+[11:30:24] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:30:27] INFO:    SSH connection established
+[11:30:27] INFO:    Command is pbrun ohsdba -u ordnbt2o;date;ps ux
+[11:30:27] INFO:    Connection channel established succesfully
+[11:30:27] INFO:    Start to run command
+[11:30:28] INFO:    su from soummazu to ordnbt2o at Thu Dec 17 06:00:28 GMT 2015
+
+
+=============== [2015/12/17 11:53:54, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[11:53:54] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[11:53:54] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[11:53:54] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[11:53:54] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[11:53:54] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[11:53:54] INFO:    ******************************************************
+[11:53:54] INFO:    The list below shows sshxcute configuration parameter
+[11:53:54] INFO:    ******************************************************
+[11:53:54] INFO:    TIMEOUT => 3600
+[11:53:54] INFO:    HALT_ON_FAILURE => true
+[11:53:54] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[11:53:54] INFO:    SSH_PORT_NUMBER => 22
+[11:53:54] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[11:53:54] INFO:    SSHExec initializing ...
+[11:53:54] INFO:    Session initialized and associated with user credential D33Pm@zz
+[11:53:54] INFO:    SSHExec initialized successfully
+[11:53:54] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[11:54:02] INFO:    SSH connection established
+[11:54:02] INFO:    Command is pbrun ohsdba -u ordnbt2o 'date';pbrun ohsdba -u ordnbt2o 'ps' 'ux'
+[11:54:02] INFO:    Connection channel established succesfully
+[11:54:02] INFO:    Start to run command
+[11:54:02] INFO:    Thu Dec 17 06:24:02 GMT 2015
+
+[11:54:03] INFO:    USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ordnbt2o  4821  0.0  0.0  14152  1468 ?        Ss   Dec02   0:02 /dnbt2o/oracle/product/112/ccr/bin/nmz -cron -silent
+ordnbt2o 17011  0.2  0.1 4330800 19292 ?       Ss   05:00   0:11 ora_vkrm_DNBT2O
+ordnbt2o 22643  0.0  0.2 4333304 33480 ?       Ss   Dec11   1:18 ora_pmon_DNBT2O
+ordnbt2o 22647  0.0  0.1 4330800 16796 ?       Ss   Dec11   2:28 ora_psp0_DNBT2O
+ordnbt2o 22651  1.9  0.0 4330800 16032 ?       Ss   Dec11 156:11 ora_vktm_DNBT2O
+ordnbt2o 22657  0.0  0.0 4330800 16320 ?       Ss   Dec11   0:18 ora_gen0_DNBT2O
+ordnbt2o 22661  0.0  0.0 4330800 16068 ?       Ss   Dec11   0:28 ora_diag_DNBT2O
+ordnbt2o 22665  0.0  0.2 4331312 44356 ?       Ss   Dec11   0:23 ora_dbrm_DNBT2O
+ordnbt2o 22669  0.2  0.2 4337456 49092 ?       Ss   Dec11  18:32 ora_dia0_DNBT2O
+ordnbt2o 22673  0.0  0.5 4330800 91536 ?       Ss   Dec11   0:17 ora_mman_DNBT2O
+ordnbt2o 22677  0.0  5.4 4347564 890868 ?      Ss   Dec11   0:36 ora_dbw0_DNBT2O
+ordnbt2o 22681  0.0  0.
+[11:54:03] INFO:    2 4354544 35048 ?       Ss   Dec11   0:41 ora_lgwr_DNBT2O
+ordnbt2o 22685  0.0  0.7 4337712 121260 ?      Ss   Dec11   2:10 ora_ckpt_DNBT2O
+ordnbt2o 22690  0.0  2.0 4337460 329592 ?      Ss   Dec11   0:30 ora_smon_DNBT2O
+ordnbt2o 22694  0.0  0.1 4332336 25688 ?       Ss   Dec11   0:07 ora_reco_DNBT2O
+ordnbt2o 22698  0.0  0.5 4336948 85764 ?       Ss   Dec11   1:04 ora_mmon_DNBT2O
+ordnbt2o 22702  0.1  0.4 4332036 66676 ?       Ss   Dec11   8:42 ora_mmnl_DNBT2O
+ordnbt2o 22725  0.0  0.3 4379120 57580 ?       Ss   Dec11   0:14 ora_arc0_DNBT2O
+ordnbt2o 22772  0.0  0.1 4330800 17712 ?       Ss   Dec11   0:08 ora_qmnc_DNBT2O
+ordnbt2o 22776  0.0  0.2 4333468 42360 ?       Ss   Dec11   0:08 ora_emnc_DNBT2O
+ordnbt2o 22780  0.0  0.2 4334660 41920 ?       Ss   Dec11   0:09 ora_q000_DNBT2O
+ordnbt2o 22784  0.0  0.7 4336364 117584 ?      Ss   Dec11   0:09 ora_q001_DNBT2O
+ordnbt2o 22789  0.0  0.1 4334656 28284 ?       Ss   Dec11   0:08 ora_e000_DNBT2O
+ordnbt2o 22798  0.0  0.1 4333600 18544 ?       Ss   Dec11   0:08 ora_e001_D
+[11:54:03] INFO:    NBT2O
+ordnbt2o 22802  0.0  0.1 4333600 18528 ?       Ss   Dec11   0:08 ora_e002_DNBT2O
+ordnbt2o 22806  0.0  0.1 4333600 18520 ?       Ss   Dec11   0:08 ora_e003_DNBT2O
+ordnbt2o 22810  0.0  0.1 4334680 32352 ?       Ss   Dec11   1:00 ora_e004_DNBT2O
+ordnbt2o 22836  0.0  0.6 4345680 108016 ?      Ss   Dec11   1:35 ora_cjq0_DNBT2O
+ordnbt2o 22925  0.0  0.0  84588 13268 ?        Ssl  Dec11   0:43 /dnbt2o/oracle/product/112/bin/tnslsnr LISTENER_DNBT2O -inherit
+ordnbt2o 23239  0.0  0.1 4330800 16996 ?       Ss   Dec11   0:20 ora_smco_DNBT2O
+ordnbt2o 23609  0.0  0.1 4332108 26540 ?       Ss   Dec11   0:03 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23613  0.0  0.1 4332108 21408 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23617  0.0  0.1 4332108 21152 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23621  0.0  0.1 4332108 21220 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23625  0.0  0.1 4332108 21156 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23629  0.0  0.1 4332108 21124 
+[11:54:03] INFO:    ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23633  0.0  0.1 4332108 21112 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23637  0.0  0.1 4332108 21104 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23641  0.0  0.1 4332108 21108 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23645  0.0  0.1 4332108 21120 ?       Ss   Dec11   0:00 oracleDNBT2O (LOCAL=NO)
+ordnbt2o 23649  0.0  0.2 4335692 41368 ?       Ss   Dec11   0:00 oracle
+[11:54:03] INFO:    DNBT2O (LOCAL=NO)
+ordnbt2o 27058  0.0  0.0  64128  1292 ?        S    06:00   0:00 -bash
+ordnbt2o 30047  0.0  0.1 4330796 18200 ?       Ss   06:21   0:00 ora_w000_DNBT2O
+ordnbt2o 30439  0.0  0.0  63796   932 ?        R    06:24   0:00 ps ux
+
+[11:54:03] INFO:    Connection channel closed
+[11:54:03] INFO:    Check if exec success or not ... 
+[11:54:03] INFO:    Execute successfully for command: pbrun ohsdba -u ordnbt2o 'date';pbrun ohsdba -u ordnbt2o 'ps' 'ux'
+[11:54:03] INFO:    Now wait 0 seconds to begin next task ...
+[11:54:03] INFO:    Connection channel disconnect
+[11:54:03] INFO:    SSH connection shutdown
+
+=============== [2015/12/17 12:02:23, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[12:02:23] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[12:02:23] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[12:02:23] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[12:02:23] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[12:02:23] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[12:02:23] INFO:    ******************************************************
+[12:02:23] INFO:    The list below shows sshxcute configuration parameter
+[12:02:23] INFO:    ******************************************************
+[12:02:23] INFO:    TIMEOUT => 3600
+[12:02:23] INFO:    HALT_ON_FAILURE => true
+[12:02:23] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[12:02:23] INFO:    SSH_PORT_NUMBER => 22
+[12:02:23] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[12:02:23] INFO:    SSHExec initializing ...
+[12:02:23] INFO:    Session initialized and associated with user credential D33Pm@zz
+[12:02:23] INFO:    SSHExec initialized successfully
+[12:02:23] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[12:02:32] INFO:    SSH connection established
+[12:02:32] INFO:    Command is pbrun ohsdba -u ordnbt2o;
+[12:02:32] INFO:    Connection channel established succesfully
+[12:02:32] INFO:    Start to run command
+[12:02:32] INFO:    su from soummazu to ordnbt2o at Thu Dec 17 06:32:32 GMT 2015
+
+
+=============== [2015/12/17 12:15:01, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[12:15:01] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[12:15:01] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[12:15:01] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[12:15:01] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[12:15:01] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[12:15:01] INFO:    ******************************************************
+[12:15:01] INFO:    The list below shows sshxcute configuration parameter
+[12:15:01] INFO:    ******************************************************
+[12:15:01] INFO:    TIMEOUT => 3600
+[12:15:01] INFO:    HALT_ON_FAILURE => true
+[12:15:01] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[12:15:01] INFO:    SSH_PORT_NUMBER => 22
+[12:15:01] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[12:15:01] INFO:    SSHExec initializing ...
+[12:15:01] INFO:    Session initialized and associated with user credential D33Pm@zz
+[12:15:01] INFO:    SSHExec initialized successfully
+[12:15:01] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[12:15:03] INFO:    SSH connection established
+[12:15:03] INFO:    Command is pbrun ohsdba -u ordnbt2o 'sh' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'
+[12:15:04] INFO:    Connection channel established succesfully
+[12:15:04] INFO:    Start to run command
+[12:15:04] INFO:    Connection channel closed
+[12:15:04] INFO:    Check if exec success or not ... 
+[12:15:04] INFO:    Execution failed while executing command: pbrun ohsdba -u ordnbt2o 'sh' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'
+[12:15:04] INFO:    Error message: Sorry, your request is not allowed.pbrun9.1.0-08[2045]: Request rejected by pbmasterd on sldc05pb02.oracleoutsourcing.com.
+[12:15:04] ERROR:   The task has failed to execute :Exec command pbrun ohsdba -u ordnbt2o 'sh' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'. So program exit.
+[12:15:04] INFO:    SSH connection shutdown
+
+=============== [2015/12/17 12:49:06, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[12:49:06] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[12:49:06] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[12:49:06] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[12:49:06] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[12:49:06] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[12:49:06] INFO:    ******************************************************
+[12:49:06] INFO:    The list below shows sshxcute configuration parameter
+[12:49:06] INFO:    ******************************************************
+[12:49:06] INFO:    TIMEOUT => 3600
+[12:49:06] INFO:    HALT_ON_FAILURE => true
+[12:49:06] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[12:49:06] INFO:    SSH_PORT_NUMBER => 22
+[12:49:06] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[12:49:06] INFO:    SSHExec initializing ...
+[12:49:06] INFO:    Session initialized and associated with user credential D33Pm@zz
+[12:49:06] INFO:    SSHExec initialized successfully
+[12:49:06] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[12:49:09] INFO:    SSH connection established
+[12:49:09] INFO:    Command is pbrun ohsdba -u ordnbt2o 'bash' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'
+[12:49:10] INFO:    Connection channel established succesfully
+[12:49:10] INFO:    Start to run command
+[12:49:10] INFO:    Connection channel closed
+[12:49:10] INFO:    Check if exec success or not ... 
+[12:49:10] INFO:    Execution failed while executing command: pbrun ohsdba -u ordnbt2o 'bash' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'
+[12:49:10] INFO:    Error message: Sorry, your request is not allowed.pbrun9.1.0-08[7641]: Request rejected by pbmasterd on sldc05pb02.oracleoutsourcing.com.
+[12:49:10] ERROR:   The task has failed to execute :Exec command pbrun ohsdba -u ordnbt2o 'bash' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'. So program exit.
+[12:49:10] INFO:    SSH connection shutdown
+
+=============== [2015/12/17 12:49:51, net.neoremind.sshxcute.core.SSHExec.<clinit>:80] ====================
+
+[12:49:51] INFO:    Set system configuration parameter 'HALT_ON_FAILURE' to new value 'true'
+[12:49:51] INFO:    Set system configuration parameter 'SSH_PORT_NUMBER' to new value '22'
+[12:49:51] INFO:    Set system configuration parameter 'ERROR_MSG_BUFFER_TEMP_FILE_PATH' to new value 'sample.err'
+[12:49:51] INFO:    Set system configuration parameter 'INTEVAL_TIME_BETWEEN_TASKS' to new value '100'
+[12:49:51] INFO:    Set system configuration parameter 'TIMEOUT' to new value '3600'
+[12:49:51] INFO:    ******************************************************
+[12:49:51] INFO:    The list below shows sshxcute configuration parameter
+[12:49:51] INFO:    ******************************************************
+[12:49:51] INFO:    TIMEOUT => 3600
+[12:49:51] INFO:    HALT_ON_FAILURE => true
+[12:49:51] INFO:    INTEVAL_TIME_BETWEEN_TASKS => 100
+[12:49:51] INFO:    SSH_PORT_NUMBER => 22
+[12:49:51] INFO:    ERROR_MSG_BUFFER_TEMP_FILE_PATH => sample.err
+[12:49:51] INFO:    SSHExec initializing ...
+[12:49:51] INFO:    Session initialized and associated with user credential D33Pm@zz
+[12:49:51] INFO:    SSHExec initialized successfully
+[12:49:51] INFO:    SSHExec trying to connect soummazu@vmohsnbty012.oracleoutsourcing.com
+[12:49:54] INFO:    SSH connection established
+[12:49:54] INFO:    Command is pbrun ohsdba -u ordnbt2o 'ksh' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'
+[12:49:54] INFO:    Connection channel established succesfully
+[12:49:54] INFO:    Start to run command
+[12:49:55] INFO:    Connection channel closed
+[12:49:55] INFO:    Check if exec success or not ... 
+[12:49:55] INFO:    Execution failed while executing command: pbrun ohsdba -u ordnbt2o 'ksh' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'
+[12:49:55] INFO:    Error message: Sorry, your request is not allowed.pbrun9.1.0-08[7721]: Request rejected by pbmasterd on sldc05pb02.oracleoutsourcing.com.
+[12:49:55] ERROR:   The task has failed to execute :Exec command pbrun ohsdba -u ordnbt2o 'ksh' '/home/soummazu/preHC_nonProd.sh' 'DNBT2O'. So program exit.
+[12:49:55] INFO:    SSH connection shutdown
